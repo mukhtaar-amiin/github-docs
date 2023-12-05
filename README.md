@@ -1,4 +1,18 @@
-# GIT / Github Docs
+# Table of Contents
+
+- [GIT / Github](#git--github-docs)
+  1.  [Git](#git)
+  2.  [Github](#github)
+- [Why is version control important](#why-is-version-control-important)
+- [Git Workflow for Developers](#git-workflow-for-developers)
+  1. [Pull Latest Updates](#1-pull-latest-updates)
+  2. [Create a Feature Branch](#2-create-a-feature-branch)
+  3. [Staging and Committing Changes](#3-staging-and-committing-changes)
+  4. [Push Feature Branch](#4-push-feature-branch)
+  5. [Post Feature Branch Push](#5-post-feature-branch-push)
+  6. [Delete Local Branch](#6-delete-local-branch)
+
+# GIT / Github
 
 ## Git
 
@@ -9,7 +23,7 @@
 
 - GitHub is a web-based platform that provides hosting for software development and version control using Git. It offers a range of collaborative features for developers, making it easier to work together on projects. GitHub is widely used for hosting and sharing code, managing projects, and facilitating collaboration among developers.
 
-## Why is version control important
+# Why is version control important
 
 1. **History and Audit Trail:**
 
@@ -78,9 +92,48 @@ Once your changes are committed locally, push the feature branch to the remote r
 git push origin feature-branch # Origin Refers to the remote repository
 ```
 
-## 5. Summary
+## 5. Post Feature Branch Push
 
-Following these steps ensures you're working with the latest code, isolating your changes, and maintaining a clean and organized version history in the repository.
+- **After pushing, GitHub will provide a link to create a pull request.**
 
+1. Navigate to "Pull Requests" on GitHub:
+   Go to your repository on GitHub and click on the "Pull Requests" tab.
 
+2. Click on the "New Pull Request" button.
 
+3. Select Branches:
+
+   Choose the main branch as the base branch.
+   Select your feature branch as the compare branch.
+
+4. Add Details:
+   Provide a brief title and description summarizing your changes.
+
+5. Assign Reviewer:
+   Assign a reviewer responsible for approving changes.
+
+6. Create Pull Request:
+   Click the "Create Pull Request" button to open the pull request for review.
+
+7. **Wait for Merging:**
+
+   The pull request enters a review phase.
+   The assigned reviewer inspects changes, provides feedback, and approves for merging.
+
+8. **Make Adjustments**:
+   Be responsive to feedback, make necessary adjustments, and update the pull request.
+
+9. **Merge Changes**:
+   Once the reviewer is satisfied, they will merge your changes into the main branch.
+
+**Congratulations! You've successfully contributed your feature through a
+pull request!**
+
+10. **Delete Local Branch**
+
+    Once Branch is merged you should delete your local branch
+    ```bash
+    git branch -d feature_branch # This will delete local branch if merged Localy
+    git branch -D feature_branch # This will delete local branch even if not merged Localy
+    git pull origin main # finally pull latest update from remote repository
+    ```
