@@ -28,6 +28,7 @@
     - [5. Use .gitignore:](#5-use-gitignore)
     - [6. Regularly Clean Up Branches:](#6-regularly-clean-up-branches)
     - [7. Review Changes Before Pushing:](#7-review-changes-before-pushing)
+- [Usuful Links](#usuful-links)
 - [Contributions](#contributions)
 
 # GIT / Github
@@ -253,8 +254,12 @@ To use Git History, right-click on a file or folder in your workspace and select
 - Review commits to avoid pushing unnecessary changes.
 
 
+# Usuful Links
+- [Atlassian Git Tutorial](https://www.atlassian.com/git): Comperhensive Resources on git.
+- [Git Cheat Sheet](https://training.github.com/downloads/github-git-cheat-sheet.pdf): PDF file that containes useful git commands.
+- [How to Undo Almost Anything](https://github.blog/2015-06-08-how-to-undo-almost-anything-with-git/): Common scenarios where you might want to “undo” a change you’ve made and the best way to do it using Git.
 
-
+---
 # Contributions
 
 **Contributions are welcome!**
