@@ -12,6 +12,8 @@
   5. [Post Feature Branch Push](#5-post-feature-branch-push)
   6. [Delete Local Branch](#6-delete-local-branch)
 
+- [Resetting in Git: Strategies for Commit, Staging.](#resetting-in-git-strategies-for-commit-staging)
+
 # GIT / Github
 
 ## Git
@@ -137,3 +139,47 @@ pull request!**
     git branch -D feature_branch # This will delete local branch even if not merged Localy
     git pull origin main # finally pull latest update from remote repository
     ```
+
+
+# Resetting in Git: Strategies for Commit, Staging.
+
+When you make a new commit, Git stores a snapshot of your repository at that specific moment in time; later, you can use Git to go back to an earlier version of your project.
+
+## 1. Undo Last Staging
+```bash
+git reset --mixed # this is the default when executing git reset
+```
+This will undo the last staging.
+
+## 2. Rename a commit
+If there is a typo or want to modify the commit message.
+```bash
+git commit --amend
+# or
+git commit --amend -m "message"
+```
+
+## 3. Reset to a Commit (Keep Changes)
+After staging and commiting your work you might want to go back to the previous commit
+
+```bash
+git reset --soft <commit_hash>
+
+# use git log to get commit hash
+git log
+commit 55c396ac9e3f44510745a79466262df9025f0036 # this is the hash
+Author: spikeoze <mukhtaaramiin@gmail.com>
+Date:   Tue Dec 5 19:29:13 2023 +0300
+
+    introduction and git workflow
+```
+
+This will keep the working in your directory and only reset to the commit specified.
+
+## 4. Reset to a commit (Discard Changes)
+This will discard changes be cautious when using this command as it will discard changes after the commit you are resetting to.
+```bash
+git reset --hard  <commit_hash>
+```
+
+
