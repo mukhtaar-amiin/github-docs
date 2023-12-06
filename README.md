@@ -16,7 +16,7 @@
   - [2. Rename a Commit](#2-rename-a-commit)
   - [3. Reset to a Commit (Keep Changes)](#3-reset-to-a-commit-keep-changes)
   - [4. Reset to a Commit (Discard Changes)](#4-reset-to-a-commit-discard-changes)
-- [Usuful Extentions (VSCode)](#usuful-extentions-vscode)
+- [Useful Extensions (VSCode)](#useful-extensions-vscode)
   - [1. GitLens](#1-gitlens)
   - [2. Git Graph](#2-git-graph)
   - [3. Git History](#3-git-history)
@@ -28,7 +28,7 @@
     - [5. Use .gitignore:](#5-use-gitignore)
     - [6. Regularly Clean Up Branches:](#6-regularly-clean-up-branches)
     - [7. Review Changes Before Pushing:](#7-review-changes-before-pushing)
-- [Usuful Links](#usuful-links)
+- [Useful Links](#useful-links)
 - [Contributions](#contributions)
 
 # GIT / Github
@@ -152,8 +152,8 @@ pull request!**
 
     Once Branch is merged you should delete your local branch
     ```bash
-    git branch -d feature_branch # This will delete local branch if merged Localy
-    git branch -D feature_branch # This will delete local branch even if not merged Localy
+    git branch -d feature_branch # This will delete local branch if merged Locally
+    git branch -D feature_branch # This will delete local branch even if not merged Locally
     git pull origin main # finally pull latest update from remote repository
     ```
 
@@ -177,7 +177,7 @@ git commit --amend -m "message"
 ```
 
 ## 3. Reset to a Commit (Keep Changes)
-After staging and commiting your work you might want to go back to the previous commit
+After staging and committing your work you might want to go back to the previous commit
 
 ```bash
 git reset --soft <commit_hash>
@@ -200,7 +200,7 @@ git reset --hard  <commit_hash>
 ```
 
 
-# Usuful Extentions (VSCode)
+# Useful Extensions (VSCode)
 
 ## 1. GitLens
 
@@ -254,9 +254,9 @@ To use Git History, right-click on a file or folder in your workspace and select
 - Review commits to avoid pushing unnecessary changes.
 
 
-# Usuful Links
-- [Atlassian Git Tutorial](https://www.atlassian.com/git): Comperhensive Resources on git.
-- [Git Cheat Sheet](https://training.github.com/downloads/github-git-cheat-sheet.pdf): PDF file that containes useful git commands.
+# Useful Links
+- [Atlassian Git Tutorial](https://www.atlassian.com/git): Comprehensive Resources on git.
+- [Git Cheat Sheet](https://training.github.com/downloads/github-git-cheat-sheet.pdf): PDF file that contains useful git commands.
 - [How to Undo Almost Anything](https://github.blog/2015-06-08-how-to-undo-almost-anything-with-git/): Common scenarios where you might want to “undo” a change you’ve made and the best way to do it using Git.
 
 ---
