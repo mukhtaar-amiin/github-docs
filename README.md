@@ -18,6 +18,8 @@
   - [4. Reset to a Commit (Discard Changes)](#4-reset-to-a-commit-discard-changes)
 - [Usuful Extentions (VSCode)](#usuful-extentions-vscode)
   - [1. GitLens](#1-gitlens)
+  - [2. Git Graph](#2-git-graph)
+  - [3. Git History](#3-git-history)
 
 # GIT / Github
 
@@ -199,10 +201,19 @@ GitLens is a powerful Visual Studio Code extension. It provides seamless navigat
 
 
 
+## 2. Git Graph
+Git Graph is an extension for Visual Studio Code that provides an interactive graphical representation of your repository's commit history and branches. It enhances understanding of your project's version control history with features like viewing commit changes, diffs, and performing git actions directly from the graph. It's a useful tool for visualizing the structure and progress of your development work.
+
+![Git Graph](images/gitgraph.png)
 
 
 
+## 3. Git History
 
+Git History is an extension for Visual Studio Code that allows you to view git log along with the complete version history. It provides a clear and detailed view of the commit history and the changes made in each commit.
 
+With Git History, you can view the details of any commit, compare changes between commits or branches, view a commit's metadata, or check out an older version of the code. It’s a useful tool for understanding the evolution of a project and tracking changes over time.
 
+To use Git History, right-click on a file or folder in your workspace and select "View Git History". Then, you can select any commit from the history list to view the changes made in that commit.
 
+![Git History](images/githistory.png)
