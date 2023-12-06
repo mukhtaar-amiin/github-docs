@@ -1,18 +1,23 @@
 # Table of Contents
 
-- [GIT / Github](#git--github-docs)
-  1.  [Git](#git)
-  2.  [Github](#github)
+- [Table of Contents](#table-of-contents)
+- [GIT / Github](#git--github)
+  - [Git](#git)
+  - [Github](#github)
 - [Why is version control important](#why-is-version-control-important)
 - [Git Workflow for Developers](#git-workflow-for-developers)
-  1. [Pull Latest Updates](#1-pull-latest-updates)
-  2. [Create a Feature Branch](#2-create-a-feature-branch)
-  3. [Staging and Committing Changes](#3-staging-and-committing-changes)
-  4. [Push Feature Branch](#4-push-feature-branch)
-  5. [Post Feature Branch Push](#5-post-feature-branch-push)
-  6. [Delete Local Branch](#6-delete-local-branch)
-
+  - [1. Pull Latest Updates](#1-pull-latest-updates)
+  - [2. Create a Feature Branch](#2-create-a-feature-branch)
+  - [3. Staging and Committing Changes](#3-staging-and-committing-changes)
+  - [4. Push Feature Branch](#4-push-feature-branch)
+  - [5. Post Feature Branch Push](#5-post-feature-branch-push)
 - [Resetting in Git: Strategies for Commit, Staging.](#resetting-in-git-strategies-for-commit-staging)
+  - [1. Undo Last Staging](#1-undo-last-staging)
+  - [2. Rename a Commit](#2-rename-a-commit)
+  - [3. Reset to a Commit (Keep Changes)](#3-reset-to-a-commit-keep-changes)
+  - [4. Reset to a Commit (Discard Changes)](#4-reset-to-a-commit-discard-changes)
+- [Usuful Extentions (VSCode)](#usuful-extentions-vscode)
+  - [1. GitLens](#1-gitlens)
 
 # GIT / Github
 
@@ -151,7 +156,7 @@ git reset --mixed # this is the default when executing git reset
 ```
 This will undo the last staging.
 
-## 2. Rename a commit
+## 2. Rename a Commit
 If there is a typo or want to modify the commit message.
 ```bash
 git commit --amend
@@ -176,10 +181,28 @@ Date:   Tue Dec 5 19:29:13 2023 +0300
 
 This will keep the working in your directory and only reset to the commit specified.
 
-## 4. Reset to a commit (Discard Changes)
+## 4. Reset to a Commit (Discard Changes)
 This will discard changes be cautious when using this command as it will discard changes after the commit you are resetting to.
 ```bash
 git reset --hard  <commit_hash>
 ```
+
+
+# Usuful Extentions (VSCode)
+
+## 1. GitLens
+
+
+GitLens is a powerful Visual Studio Code extension. It provides seamless navigation and powerful features to gain insights into who, why, and when a line or code block was changed.
+
+![GitLens](images/gitlens.png "GitLens")
+
+
+
+
+
+
+
+
 
 
