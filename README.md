@@ -20,6 +20,15 @@
   - [1. GitLens](#1-gitlens)
   - [2. Git Graph](#2-git-graph)
   - [3. Git History](#3-git-history)
+- [Best Practices](#best-practices)
+    - [1. Write Meaningful Commit Messages:](#1-write-meaningful-commit-messages)
+    - [2. Keep Commits Atomic:](#2-keep-commits-atomic)
+    - [3. Use Feature Branches:](#3-use-feature-branches)
+    - [4. Pull Before Push:](#4-pull-before-push)
+    - [5. Use .gitignore:](#5-use-gitignore)
+    - [6. Regularly Clean Up Branches:](#6-regularly-clean-up-branches)
+    - [7. Review Changes Before Pushing:](#7-review-changes-before-pushing)
+- [Contributions](#contributions)
 
 # GIT / Github
 
@@ -217,3 +226,35 @@ With Git History, you can view the details of any commit, compare changes betwee
 To use Git History, right-click on a file or folder in your workspace and select "View Git History". Then, you can select any commit from the history list to view the changes made in that commit.
 
 ![Git History](images/githistory.png)
+
+
+---
+# Best Practices
+
+### 1. Write Meaningful Commit Messages:
+- Clearly describe the purpose of each commit.
+
+### 2. Keep Commits Atomic:
+- Make each commit represent a single logical change.
+
+### 3. Use Feature Branches:
+- Create branches for new features or bug fixes.
+
+### 4. Pull Before Push:
+- Always pull changes before pushing to avoid conflicts.
+
+### 5. Use .gitignore:
+- Specify files/directories to be ignored.
+
+### 6. Regularly Clean Up Branches:
+- Delete branches that are no longer needed.
+
+### 7. Review Changes Before Pushing:
+- Review commits to avoid pushing unnecessary changes.
+
+
+
+
+# Contributions
+
+**Contributions are welcome!**
